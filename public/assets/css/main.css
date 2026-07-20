@@ -1,0 +1,113 @@
+/* ================= GLOBAL ================= */
+body {
+    margin: 0;
+    background: #f4f6f9;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+/* ================= SIDEBAR ================= */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+   background: linear-gradient(180deg, #3d9970, #2e7d5a);
+    padding: 20px;
+    z-index: 1000;
+    display: flex;
+    flex-direction: column;
+    border-right: 1px solid rgba(255,255,255,0.2);
+}
+
+/* FORCE WHITE TEXT */
+.sidebar,
+.sidebar * {
+    color: #ffffff !important;
+}
+
+/* ================= HEADER ================= */
+.sidebar-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.sidebar-header img {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 4px;
+}
+
+.sidebar-header h4 {
+    margin: 0;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* ================= DIVIDER ================= */
+.sidebar hr {
+    border: none;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    margin: 12px 0 18px;
+}
+
+/* ================= LINKS ================= */
+.sidebar a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 12px 14px;
+    margin-bottom: 6px;
+    text-decoration: none;
+    border-radius: 8px;
+    background: transparent;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+/* Hover (darker olive) */
+.sidebar a:hover {
+    background: #2e7d5a !important;
+}
+
+/* Active */
+.sidebar a.active {
+    background: #2e7d5a !important;
+    font-weight: bold;
+}
+
+/* Icons */
+.sidebar a i {
+    min-width: 18px;
+    color: #d1fae5 !important;
+}
+
+/* ================= LOGOUT ================= */
+.sidebar .logout {
+    margin-top: auto;
+    color: #ffdddd !important;
+}
+
+.sidebar .logout i {
+    color: #ffdddd !important;
+}
+
+/* ================= MAIN CONTENT ================= */
+.main-content {
+    margin-left: 250px;
+    padding: 20px;
+}
+
+/* ================= TOPBAR ================= */
+.topbar {
+    background: #ffffff;
+    padding: 12px 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+}
